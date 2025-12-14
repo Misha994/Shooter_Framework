@@ -1,0 +1,35 @@
+{
+  "scene":"Assets/Scenes/Bootstrap.unity",
+  "roots":[
+{
+    "name":"SceneContext",
+    "active":true,
+    "tag":"Untagged",
+    "layer":0,
+    "components":[{"type":"Transform","enabled":true},{"type":"SceneContext","enabled":true},{"type":"BootstrapInstaller","enabled":true}],
+    "children":[
+
+    ]
+  },
+{
+    "name":"EventSystem",
+    "active":true,
+    "tag":"Untagged",
+    "layer":0,
+    "components":[{"type":"Transform","enabled":true},{"type":"EventSystem","enabled":true},{"type":"InputSystemUIInputModule","enabled":true}],
+    "children":[
+
+    ]
+  },
+{
+    "name":"GlobalAudioListenerInstaller",
+    "active":true,
+    "tag":"Untagged",
+    "layer":0,
+    "components":[{"type":"Transform","enabled":true},{"type":"GlobalAudioListenerInstaller","enabled":true}],
+    "children":[
+
+    ]
+  }
+  ]
+}

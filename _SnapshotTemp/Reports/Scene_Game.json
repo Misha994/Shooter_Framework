@@ -1,0 +1,1487 @@
+{
+  "scene":"Assets/Scenes/Game.unity",
+  "roots":[
+{
+    "name":"GameContext",
+    "active":true,
+    "tag":"Untagged",
+    "layer":0,
+    "components":[{"type":"Transform","enabled":true},{"type":"SceneContext","enabled":true}],
+    "children":[
+
+    ]
+  },
+{
+    "name":"GameInstaller",
+    "active":true,
+    "tag":"Untagged",
+    "layer":0,
+    "components":[{"type":"Transform","enabled":true},{"type":"GameSceneInstaller","enabled":true}],
+    "children":[
+
+    ]
+  },
+{
+    "name":"Plane",
+    "active":true,
+    "tag":"Untagged",
+    "layer":6,
+    "components":[{"type":"Transform","enabled":true},{"type":"MeshFilter","enabled":true},{"type":"MeshRenderer","enabled":true},{"type":"MeshCollider","enabled":true}],
+    "children":[
+
+    ]
+  },
+{
+    "name":"Spawn Point",
+    "active":true,
+    "tag":"Untagged",
+    "layer":0,
+    "components":[{"type":"Transform","enabled":true}],
+    "children":[
+
+    ]
+  },
+{
+    "name":"EnemySpawnPoints",
+    "active":true,
+    "tag":"Untagged",
+    "layer":0,
+    "components":[{"type":"Transform","enabled":true},{"type":"EnemySpawner","enabled":true}],
+    "children":[
+{
+    "name":"Spawn_01 ",
+    "active":true,
+    "tag":"Untagged",
+    "layer":0,
+    "components":[{"type":"Transform","enabled":true}],
+    "children":[
+
+    ]
+  },
+{
+    "name":"Spawn_02",
+    "active":true,
+    "tag":"Untagged",
+    "layer":0,
+    "components":[{"type":"Transform","enabled":true}],
+    "children":[
+
+    ]
+  }
+    ]
+  },
+{
+    "name":"Cube",
+    "active":true,
+    "tag":"Untagged",
+    "layer":0,
+    "components":[{"type":"Transform","enabled":true},{"type":"MeshFilter","enabled":true},{"type":"MeshRenderer","enabled":true},{"type":"BoxCollider","enabled":true}],
+    "children":[
+
+    ]
+  },
+{
+    "name":"Cube (5)",
+    "active":true,
+    "tag":"Untagged",
+    "layer":0,
+    "components":[{"type":"Transform","enabled":true},{"type":"MeshFilter","enabled":true},{"type":"MeshRenderer","enabled":true},{"type":"BoxCollider","enabled":true}],
+    "children":[
+
+    ]
+  },
+{
+    "name":"Cube (1)",
+    "active":true,
+    "tag":"Untagged",
+    "layer":0,
+    "components":[{"type":"Transform","enabled":true},{"type":"MeshFilter","enabled":true},{"type":"MeshRenderer","enabled":true},{"type":"BoxCollider","enabled":true}],
+    "children":[
+
+    ]
+  },
+{
+    "name":"Cube (4)",
+    "active":true,
+    "tag":"Untagged",
+    "layer":0,
+    "components":[{"type":"Transform","enabled":true},{"type":"MeshFilter","enabled":true},{"type":"MeshRenderer","enabled":true},{"type":"BoxCollider","enabled":true}],
+    "children":[
+
+    ]
+  },
+{
+    "name":"Cube (28)",
+    "active":true,
+    "tag":"Untagged",
+    "layer":0,
+    "components":[{"type":"Transform","enabled":true},{"type":"MeshFilter","enabled":true},{"type":"MeshRenderer","enabled":true},{"type":"BoxCollider","enabled":true}],
+    "children":[
+
+    ]
+  },
+{
+    "name":"Cube (30)",
+    "active":true,
+    "tag":"Untagged",
+    "layer":0,
+    "components":[{"type":"Transform","enabled":true},{"type":"MeshFilter","enabled":true},{"type":"MeshRenderer","enabled":true},{"type":"BoxCollider","enabled":true}],
+    "children":[
+
+    ]
+  },
+{
+    "name":"Cube (31)",
+    "active":true,
+    "tag":"Untagged",
+    "layer":0,
+    "components":[{"type":"Transform","enabled":true},{"type":"MeshFilter","enabled":true},{"type":"MeshRenderer","enabled":true},{"type":"BoxCollider","enabled":true}],
+    "children":[
+
+    ]
+  },
+{
+    "name":"Cube (32)",
+    "active":true,
+    "tag":"Untagged",
+    "layer":0,
+    "components":[{"type":"Transform","enabled":true},{"type":"MeshFilter","enabled":true},{"type":"MeshRenderer","enabled":true},{"type":"BoxCollider","enabled":true}],
+    "children":[
+
+    ]
+  },
+{
+    "name":"Cube (33)",
+    "active":true,
+    "tag":"Untagged",
+    "layer":0,
+    "components":[{"type":"Transform","enabled":true},{"type":"MeshFilter","enabled":true},{"type":"MeshRenderer","enabled":true},{"type":"BoxCollider","enabled":true}],
+    "children":[
+
+    ]
+  },
+{
+    "name":"Cube (6)",
+    "active":true,
+    "tag":"Untagged",
+    "layer":6,
+    "components":[{"type":"Transform","enabled":true},{"type":"MeshFilter","enabled":true},{"type":"MeshRenderer","enabled":true},{"type":"BoxCollider","enabled":true}],
+    "children":[
+
+    ]
+  },
+{
+    "name":"Cube (25)",
+    "active":true,
+    "tag":"Untagged",
+    "layer":6,
+    "components":[{"type":"Transform","enabled":true},{"type":"MeshFilter","enabled":true},{"type":"MeshRenderer","enabled":true},{"type":"BoxCollider","enabled":true}],
+    "children":[
+
+    ]
+  },
+{
+    "name":"Cube (26)",
+    "active":true,
+    "tag":"Untagged",
+    "layer":6,
+    "components":[{"type":"Transform","enabled":true},{"type":"MeshFilter","enabled":true},{"type":"MeshRenderer","enabled":true},{"type":"BoxCollider","enabled":true}],
+    "children":[
+
+    ]
+  },
+{
+    "name":"Cube (27)",
+    "active":true,
+    "tag":"Untagged",
+    "layer":6,
+    "components":[{"type":"Transform","enabled":true},{"type":"MeshFilter","enabled":true},{"type":"MeshRenderer","enabled":true},{"type":"BoxCollider","enabled":true}],
+    "children":[
+
+    ]
+  },
+{
+    "name":"Cube (29)",
+    "active":true,
+    "tag":"Untagged",
+    "layer":6,
+    "components":[{"type":"Transform","enabled":true},{"type":"MeshFilter","enabled":true},{"type":"MeshRenderer","enabled":true},{"type":"BoxCollider","enabled":true}],
+    "children":[
+
+    ]
+  },
+{
+    "name":"Cube (2)",
+    "active":true,
+    "tag":"Untagged",
+    "layer":0,
+    "components":[{"type":"Transform","enabled":true},{"type":"MeshFilter","enabled":true},{"type":"MeshRenderer","enabled":true},{"type":"BoxCollider","enabled":true}],
+    "children":[
+
+    ]
+  },
+{
+    "name":"Cube (3)",
+    "active":true,
+    "tag":"Untagged",
+    "layer":6,
+    "components":[{"type":"Transform","enabled":true},{"type":"MeshFilter","enabled":true},{"type":"MeshRenderer","enabled":true},{"type":"BoxCollider","enabled":true}],
+    "children":[
+
+    ]
+  },
+{
+    "name":"Cube (7)",
+    "active":true,
+    "tag":"Untagged",
+    "layer":6,
+    "components":[{"type":"Transform","enabled":true},{"type":"MeshFilter","enabled":true},{"type":"MeshRenderer","enabled":true},{"type":"BoxCollider","enabled":true}],
+    "children":[
+
+    ]
+  },
+{
+    "name":"Cube (16)",
+    "active":true,
+    "tag":"Untagged",
+    "layer":6,
+    "components":[{"type":"Transform","enabled":true},{"type":"MeshFilter","enabled":true},{"type":"MeshRenderer","enabled":true},{"type":"BoxCollider","enabled":true}],
+    "children":[
+
+    ]
+  },
+{
+    "name":"Cube (8)",
+    "active":true,
+    "tag":"Untagged",
+    "layer":6,
+    "components":[{"type":"Transform","enabled":true},{"type":"MeshFilter","enabled":true},{"type":"MeshRenderer","enabled":true},{"type":"BoxCollider","enabled":true}],
+    "children":[
+
+    ]
+  },
+{
+    "name":"Cube (17)",
+    "active":true,
+    "tag":"Untagged",
+    "layer":6,
+    "components":[{"type":"Transform","enabled":true},{"type":"MeshFilter","enabled":true},{"type":"MeshRenderer","enabled":true},{"type":"BoxCollider","enabled":true}],
+    "children":[
+
+    ]
+  },
+{
+    "name":"Cube (9)",
+    "active":true,
+    "tag":"Untagged",
+    "layer":6,
+    "components":[{"type":"Transform","enabled":true},{"type":"MeshFilter","enabled":true},{"type":"MeshRenderer","enabled":true},{"type":"BoxCollider","enabled":true}],
+    "children":[
+
+    ]
+  },
+{
+    "name":"Cube (18)",
+    "active":true,
+    "tag":"Untagged",
+    "layer":6,
+    "components":[{"type":"Transform","enabled":true},{"type":"MeshFilter","enabled":true},{"type":"MeshRenderer","enabled":true},{"type":"BoxCollider","enabled":true}],
+    "children":[
+
+    ]
+  },
+{
+    "name":"Cube (10)",
+    "active":true,
+    "tag":"Untagged",
+    "layer":6,
+    "components":[{"type":"Transform","enabled":true},{"type":"MeshFilter","enabled":true},{"type":"MeshRenderer","enabled":true},{"type":"BoxCollider","enabled":true}],
+    "children":[
+
+    ]
+  },
+{
+    "name":"Cube (19)",
+    "active":true,
+    "tag":"Untagged",
+    "layer":6,
+    "components":[{"type":"Transform","enabled":true},{"type":"MeshFilter","enabled":true},{"type":"MeshRenderer","enabled":true},{"type":"BoxCollider","enabled":true}],
+    "children":[
+
+    ]
+  },
+{
+    "name":"Cube (11)",
+    "active":true,
+    "tag":"Untagged",
+    "layer":6,
+    "components":[{"type":"Transform","enabled":true},{"type":"MeshFilter","enabled":true},{"type":"MeshRenderer","enabled":true},{"type":"BoxCollider","enabled":true}],
+    "children":[
+
+    ]
+  },
+{
+    "name":"Cube (20)",
+    "active":true,
+    "tag":"Untagged",
+    "layer":6,
+    "components":[{"type":"Transform","enabled":true},{"type":"MeshFilter","enabled":true},{"type":"MeshRenderer","enabled":true},{"type":"BoxCollider","enabled":true}],
+    "children":[
+
+    ]
+  },
+{
+    "name":"Cube (12)",
+    "active":true,
+    "tag":"Untagged",
+    "layer":6,
+    "components":[{"type":"Transform","enabled":true},{"type":"MeshFilter","enabled":true},{"type":"MeshRenderer","enabled":true},{"type":"BoxCollider","enabled":true}],
+    "children":[
+
+    ]
+  },
+{
+    "name":"Cube (21)",
+    "active":true,
+    "tag":"Untagged",
+    "layer":6,
+    "components":[{"type":"Transform","enabled":true},{"type":"MeshFilter","enabled":true},{"type":"MeshRenderer","enabled":true},{"type":"BoxCollider","enabled":true}],
+    "children":[
+
+    ]
+  },
+{
+    "name":"Cube (13)",
+    "active":true,
+    "tag":"Untagged",
+    "layer":6,
+    "components":[{"type":"Transform","enabled":true},{"type":"MeshFilter","enabled":true},{"type":"MeshRenderer","enabled":true},{"type":"BoxCollider","enabled":true}],
+    "children":[
+
+    ]
+  },
+{
+    "name":"Cube (22)",
+    "active":true,
+    "tag":"Untagged",
+    "layer":6,
+    "components":[{"type":"Transform","enabled":true},{"type":"MeshFilter","enabled":true},{"type":"MeshRenderer","enabled":true},{"type":"BoxCollider","enabled":true}],
+    "children":[
+
+    ]
+  },
+{
+    "name":"Cube (14)",
+    "active":true,
+    "tag":"Untagged",
+    "layer":6,
+    "components":[{"type":"Transform","enabled":true},{"type":"MeshFilter","enabled":true},{"type":"MeshRenderer","enabled":true},{"type":"BoxCollider","enabled":true}],
+    "children":[
+
+    ]
+  },
+{
+    "name":"Cube (23)",
+    "active":true,
+    "tag":"Untagged",
+    "layer":6,
+    "components":[{"type":"Transform","enabled":true},{"type":"MeshFilter","enabled":true},{"type":"MeshRenderer","enabled":true},{"type":"BoxCollider","enabled":true}],
+    "children":[
+
+    ]
+  },
+{
+    "name":"Cube (15)",
+    "active":true,
+    "tag":"Untagged",
+    "layer":6,
+    "components":[{"type":"Transform","enabled":true},{"type":"MeshFilter","enabled":true},{"type":"MeshRenderer","enabled":true},{"type":"BoxCollider","enabled":true}],
+    "children":[
+
+    ]
+  },
+{
+    "name":"Cube (24)",
+    "active":true,
+    "tag":"Untagged",
+    "layer":6,
+    "components":[{"type":"Transform","enabled":true},{"type":"MeshFilter","enabled":true},{"type":"MeshRenderer","enabled":true},{"type":"BoxCollider","enabled":true}],
+    "children":[
+
+    ]
+  },
+{
+    "name":"Directional Light",
+    "active":true,
+    "tag":"Untagged",
+    "layer":0,
+    "components":[{"type":"Transform","enabled":true},{"type":"Light","enabled":true}],
+    "children":[
+
+    ]
+  },
+{
+    "name":"HS433",
+    "active":true,
+    "tag":"Untagged",
+    "layer":0,
+    "components":[{"type":"Transform","enabled":true},{"type":"BoxCollider","enabled":true},{"type":"WeaponPickup","enabled":true}],
+    "children":[
+{
+    "name":"HK433_2",
+    "active":true,
+    "tag":"Untagged",
+    "layer":0,
+    "components":[{"type":"Transform","enabled":true}],
+    "children":[
+{
+    "name":"Cube.001",
+    "active":true,
+    "tag":"Untagged",
+    "layer":0,
+    "components":[{"type":"Transform","enabled":true},{"type":"MeshFilter","enabled":true},{"type":"MeshRenderer","enabled":true}],
+    "children":[
+
+    ]
+  },
+{
+    "name":"Cube.002",
+    "active":true,
+    "tag":"Untagged",
+    "layer":0,
+    "components":[{"type":"Transform","enabled":true},{"type":"MeshFilter","enabled":true},{"type":"MeshRenderer","enabled":true}],
+    "children":[
+
+    ]
+  },
+{
+    "name":"Cube.003",
+    "active":true,
+    "tag":"Untagged",
+    "layer":0,
+    "components":[{"type":"Transform","enabled":true},{"type":"MeshFilter","enabled":true},{"type":"MeshRenderer","enabled":true}],
+    "children":[
+
+    ]
+  },
+{
+    "name":"Cube.004",
+    "active":true,
+    "tag":"Untagged",
+    "layer":0,
+    "components":[{"type":"Transform","enabled":true},{"type":"MeshFilter","enabled":true},{"type":"MeshRenderer","enabled":true}],
+    "children":[
+
+    ]
+  },
+{
+    "name":"Cube.005",
+    "active":true,
+    "tag":"Untagged",
+    "layer":0,
+    "components":[{"type":"Transform","enabled":true},{"type":"MeshFilter","enabled":true},{"type":"MeshRenderer","enabled":true}],
+    "children":[
+
+    ]
+  },
+{
+    "name":"Cube.006",
+    "active":true,
+    "tag":"Untagged",
+    "layer":0,
+    "components":[{"type":"Transform","enabled":true},{"type":"MeshFilter","enabled":true},{"type":"MeshRenderer","enabled":true}],
+    "children":[
+
+    ]
+  },
+{
+    "name":"Cube.007",
+    "active":true,
+    "tag":"Untagged",
+    "layer":0,
+    "components":[{"type":"Transform","enabled":true},{"type":"MeshFilter","enabled":true},{"type":"MeshRenderer","enabled":true}],
+    "children":[
+
+    ]
+  },
+{
+    "name":"Cube.008",
+    "active":true,
+    "tag":"Untagged",
+    "layer":0,
+    "components":[{"type":"Transform","enabled":true},{"type":"MeshFilter","enabled":true},{"type":"MeshRenderer","enabled":true}],
+    "children":[
+
+    ]
+  },
+{
+    "name":"Cube.009",
+    "active":true,
+    "tag":"Untagged",
+    "layer":0,
+    "components":[{"type":"Transform","enabled":true},{"type":"MeshFilter","enabled":true},{"type":"MeshRenderer","enabled":true}],
+    "children":[
+
+    ]
+  },
+{
+    "name":"Cube.010",
+    "active":true,
+    "tag":"Untagged",
+    "layer":0,
+    "components":[{"type":"Transform","enabled":true},{"type":"MeshFilter","enabled":true},{"type":"MeshRenderer","enabled":true}],
+    "children":[
+
+    ]
+  },
+{
+    "name":"Cube.011",
+    "active":true,
+    "tag":"Untagged",
+    "layer":0,
+    "components":[{"type":"Transform","enabled":true},{"type":"MeshFilter","enabled":true},{"type":"MeshRenderer","enabled":true}],
+    "children":[
+
+    ]
+  },
+{
+    "name":"Cube.012",
+    "active":true,
+    "tag":"Untagged",
+    "layer":0,
+    "components":[{"type":"Transform","enabled":true},{"type":"MeshFilter","enabled":true},{"type":"MeshRenderer","enabled":true}],
+    "children":[
+
+    ]
+  },
+{
+    "name":"Cube.013",
+    "active":true,
+    "tag":"Untagged",
+    "layer":0,
+    "components":[{"type":"Transform","enabled":true},{"type":"MeshFilter","enabled":true},{"type":"MeshRenderer","enabled":true}],
+    "children":[
+
+    ]
+  },
+{
+    "name":"Cube.014",
+    "active":true,
+    "tag":"Untagged",
+    "layer":0,
+    "components":[{"type":"Transform","enabled":true},{"type":"MeshFilter","enabled":true},{"type":"MeshRenderer","enabled":true}],
+    "children":[
+
+    ]
+  },
+{
+    "name":"Cube.015",
+    "active":true,
+    "tag":"Untagged",
+    "layer":0,
+    "components":[{"type":"Transform","enabled":true},{"type":"MeshFilter","enabled":true},{"type":"MeshRenderer","enabled":true}],
+    "children":[
+
+    ]
+  },
+{
+    "name":"Cube.016",
+    "active":true,
+    "tag":"Untagged",
+    "layer":0,
+    "components":[{"type":"Transform","enabled":true},{"type":"MeshFilter","enabled":true},{"type":"MeshRenderer","enabled":true}],
+    "children":[
+
+    ]
+  },
+{
+    "name":"Cube.017",
+    "active":true,
+    "tag":"Untagged",
+    "layer":0,
+    "components":[{"type":"Transform","enabled":true},{"type":"MeshFilter","enabled":true},{"type":"MeshRenderer","enabled":true}],
+    "children":[
+
+    ]
+  },
+{
+    "name":"Cube.019",
+    "active":true,
+    "tag":"Untagged",
+    "layer":0,
+    "components":[{"type":"Transform","enabled":true},{"type":"MeshFilter","enabled":true},{"type":"MeshRenderer","enabled":true}],
+    "children":[
+
+    ]
+  },
+{
+    "name":"Cube.020",
+    "active":true,
+    "tag":"Untagged",
+    "layer":0,
+    "components":[{"type":"Transform","enabled":true},{"type":"MeshFilter","enabled":true},{"type":"MeshRenderer","enabled":true}],
+    "children":[
+
+    ]
+  },
+{
+    "name":"Cube.021",
+    "active":true,
+    "tag":"Untagged",
+    "layer":0,
+    "components":[{"type":"Transform","enabled":true},{"type":"MeshFilter","enabled":true},{"type":"MeshRenderer","enabled":true}],
+    "children":[
+
+    ]
+  },
+{
+    "name":"Cube.022",
+    "active":true,
+    "tag":"Untagged",
+    "layer":0,
+    "components":[{"type":"Transform","enabled":true},{"type":"MeshFilter","enabled":true},{"type":"MeshRenderer","enabled":true}],
+    "children":[
+
+    ]
+  },
+{
+    "name":"Cylinder",
+    "active":true,
+    "tag":"Untagged",
+    "layer":0,
+    "components":[{"type":"Transform","enabled":true},{"type":"MeshFilter","enabled":true},{"type":"MeshRenderer","enabled":true}],
+    "children":[
+
+    ]
+  },
+{
+    "name":"Cylinder.001",
+    "active":true,
+    "tag":"Untagged",
+    "layer":0,
+    "components":[{"type":"Transform","enabled":true},{"type":"MeshFilter","enabled":true},{"type":"MeshRenderer","enabled":true}],
+    "children":[
+
+    ]
+  }
+    ]
+  }
+    ]
+  },
+{
+    "name":"HS433 (1)",
+    "active":true,
+    "tag":"Untagged",
+    "layer":0,
+    "components":[{"type":"Transform","enabled":true},{"type":"BoxCollider","enabled":true},{"type":"WeaponPickup","enabled":true}],
+    "children":[
+{
+    "name":"HK433_2",
+    "active":true,
+    "tag":"Untagged",
+    "layer":0,
+    "components":[{"type":"Transform","enabled":true}],
+    "children":[
+{
+    "name":"Cube.001",
+    "active":true,
+    "tag":"Untagged",
+    "layer":0,
+    "components":[{"type":"Transform","enabled":true},{"type":"MeshFilter","enabled":true},{"type":"MeshRenderer","enabled":true}],
+    "children":[
+
+    ]
+  },
+{
+    "name":"Cube.002",
+    "active":true,
+    "tag":"Untagged",
+    "layer":0,
+    "components":[{"type":"Transform","enabled":true},{"type":"MeshFilter","enabled":true},{"type":"MeshRenderer","enabled":true}],
+    "children":[
+
+    ]
+  },
+{
+    "name":"Cube.003",
+    "active":true,
+    "tag":"Untagged",
+    "layer":0,
+    "components":[{"type":"Transform","enabled":true},{"type":"MeshFilter","enabled":true},{"type":"MeshRenderer","enabled":true}],
+    "children":[
+
+    ]
+  },
+{
+    "name":"Cube.004",
+    "active":true,
+    "tag":"Untagged",
+    "layer":0,
+    "components":[{"type":"Transform","enabled":true},{"type":"MeshFilter","enabled":true},{"type":"MeshRenderer","enabled":true}],
+    "children":[
+
+    ]
+  },
+{
+    "name":"Cube.005",
+    "active":true,
+    "tag":"Untagged",
+    "layer":0,
+    "components":[{"type":"Transform","enabled":true},{"type":"MeshFilter","enabled":true},{"type":"MeshRenderer","enabled":true}],
+    "children":[
+
+    ]
+  },
+{
+    "name":"Cube.006",
+    "active":true,
+    "tag":"Untagged",
+    "layer":0,
+    "components":[{"type":"Transform","enabled":true},{"type":"MeshFilter","enabled":true},{"type":"MeshRenderer","enabled":true}],
+    "children":[
+
+    ]
+  },
+{
+    "name":"Cube.007",
+    "active":true,
+    "tag":"Untagged",
+    "layer":0,
+    "components":[{"type":"Transform","enabled":true},{"type":"MeshFilter","enabled":true},{"type":"MeshRenderer","enabled":true}],
+    "children":[
+
+    ]
+  },
+{
+    "name":"Cube.008",
+    "active":true,
+    "tag":"Untagged",
+    "layer":0,
+    "components":[{"type":"Transform","enabled":true},{"type":"MeshFilter","enabled":true},{"type":"MeshRenderer","enabled":true}],
+    "children":[
+
+    ]
+  },
+{
+    "name":"Cube.009",
+    "active":true,
+    "tag":"Untagged",
+    "layer":0,
+    "components":[{"type":"Transform","enabled":true},{"type":"MeshFilter","enabled":true},{"type":"MeshRenderer","enabled":true}],
+    "children":[
+
+    ]
+  },
+{
+    "name":"Cube.010",
+    "active":true,
+    "tag":"Untagged",
+    "layer":0,
+    "components":[{"type":"Transform","enabled":true},{"type":"MeshFilter","enabled":true},{"type":"MeshRenderer","enabled":true}],
+    "children":[
+
+    ]
+  },
+{
+    "name":"Cube.011",
+    "active":true,
+    "tag":"Untagged",
+    "layer":0,
+    "components":[{"type":"Transform","enabled":true},{"type":"MeshFilter","enabled":true},{"type":"MeshRenderer","enabled":true}],
+    "children":[
+
+    ]
+  },
+{
+    "name":"Cube.012",
+    "active":true,
+    "tag":"Untagged",
+    "layer":0,
+    "components":[{"type":"Transform","enabled":true},{"type":"MeshFilter","enabled":true},{"type":"MeshRenderer","enabled":true}],
+    "children":[
+
+    ]
+  },
+{
+    "name":"Cube.013",
+    "active":true,
+    "tag":"Untagged",
+    "layer":0,
+    "components":[{"type":"Transform","enabled":true},{"type":"MeshFilter","enabled":true},{"type":"MeshRenderer","enabled":true}],
+    "children":[
+
+    ]
+  },
+{
+    "name":"Cube.014",
+    "active":true,
+    "tag":"Untagged",
+    "layer":0,
+    "components":[{"type":"Transform","enabled":true},{"type":"MeshFilter","enabled":true},{"type":"MeshRenderer","enabled":true}],
+    "children":[
+
+    ]
+  },
+{
+    "name":"Cube.015",
+    "active":true,
+    "tag":"Untagged",
+    "layer":0,
+    "components":[{"type":"Transform","enabled":true},{"type":"MeshFilter","enabled":true},{"type":"MeshRenderer","enabled":true}],
+    "children":[
+
+    ]
+  },
+{
+    "name":"Cube.016",
+    "active":true,
+    "tag":"Untagged",
+    "layer":0,
+    "components":[{"type":"Transform","enabled":true},{"type":"MeshFilter","enabled":true},{"type":"MeshRenderer","enabled":true}],
+    "children":[
+
+    ]
+  },
+{
+    "name":"Cube.017",
+    "active":true,
+    "tag":"Untagged",
+    "layer":0,
+    "components":[{"type":"Transform","enabled":true},{"type":"MeshFilter","enabled":true},{"type":"MeshRenderer","enabled":true}],
+    "children":[
+
+    ]
+  },
+{
+    "name":"Cube.019",
+    "active":true,
+    "tag":"Untagged",
+    "layer":0,
+    "components":[{"type":"Transform","enabled":true},{"type":"MeshFilter","enabled":true},{"type":"MeshRenderer","enabled":true}],
+    "children":[
+
+    ]
+  },
+{
+    "name":"Cube.020",
+    "active":true,
+    "tag":"Untagged",
+    "layer":0,
+    "components":[{"type":"Transform","enabled":true},{"type":"MeshFilter","enabled":true},{"type":"MeshRenderer","enabled":true}],
+    "children":[
+
+    ]
+  },
+{
+    "name":"Cube.021",
+    "active":true,
+    "tag":"Untagged",
+    "layer":0,
+    "components":[{"type":"Transform","enabled":true},{"type":"MeshFilter","enabled":true},{"type":"MeshRenderer","enabled":true}],
+    "children":[
+
+    ]
+  },
+{
+    "name":"Cube.022",
+    "active":true,
+    "tag":"Untagged",
+    "layer":0,
+    "components":[{"type":"Transform","enabled":true},{"type":"MeshFilter","enabled":true},{"type":"MeshRenderer","enabled":true}],
+    "children":[
+
+    ]
+  },
+{
+    "name":"Cylinder",
+    "active":true,
+    "tag":"Untagged",
+    "layer":0,
+    "components":[{"type":"Transform","enabled":true},{"type":"MeshFilter","enabled":true},{"type":"MeshRenderer","enabled":true}],
+    "children":[
+
+    ]
+  },
+{
+    "name":"Cylinder.001",
+    "active":true,
+    "tag":"Untagged",
+    "layer":0,
+    "components":[{"type":"Transform","enabled":true},{"type":"MeshFilter","enabled":true},{"type":"MeshRenderer","enabled":true}],
+    "children":[
+
+    ]
+  }
+    ]
+  }
+    ]
+  },
+{
+    "name":"Sphere",
+    "active":true,
+    "tag":"Untagged",
+    "layer":7,
+    "components":[{"type":"Transform","enabled":true},{"type":"MeshFilter","enabled":true},{"type":"MeshRenderer","enabled":true},{"type":"SphereCollider","enabled":true},{"type":"Rigidbody","enabled":true},{"type":"TestProjectileScript","enabled":false},{"type":"Projectile","enabled":true}],
+    "children":[
+
+    ]
+  },
+{
+    "name":"NavMesh Surface",
+    "active":true,
+    "tag":"Untagged",
+    "layer":0,
+    "components":[{"type":"Transform","enabled":true},{"type":"NavMeshSurface","enabled":true}],
+    "children":[
+
+    ]
+  },
+{
+    "name":"EmemyInfantryman",
+    "active":true,
+    "tag":"Untagged",
+    "layer":0,
+    "components":[{"type":"Transform","enabled":true},{"type":"Animator","enabled":true}],
+    "children":[
+{
+    "name":"Armature",
+    "active":true,
+    "tag":"Untagged",
+    "layer":0,
+    "components":[{"type":"Transform","enabled":true}],
+    "children":[
+{
+    "name":"mixamorig:Hips",
+    "active":true,
+    "tag":"Untagged",
+    "layer":0,
+    "components":[{"type":"Transform","enabled":true}],
+    "children":[
+{
+    "name":"mixamorig:LeftUpLeg",
+    "active":true,
+    "tag":"Untagged",
+    "layer":0,
+    "components":[{"type":"Transform","enabled":true}],
+    "children":[
+{
+    "name":"mixamorig:LeftLeg",
+    "active":true,
+    "tag":"Untagged",
+    "layer":0,
+    "components":[{"type":"Transform","enabled":true}],
+    "children":[
+{
+    "name":"mixamorig:LeftFoot",
+    "active":true,
+    "tag":"Untagged",
+    "layer":0,
+    "components":[{"type":"Transform","enabled":true}],
+    "children":[
+{
+    "name":"mixamorig:LeftToeBase",
+    "active":true,
+    "tag":"Untagged",
+    "layer":0,
+    "components":[{"type":"Transform","enabled":true}],
+    "children":[
+{
+    "name":"mixamorig:LeftToe_End",
+    "active":true,
+    "tag":"Untagged",
+    "layer":0,
+    "components":[{"type":"Transform","enabled":true}],
+    "children":[
+{
+    "name":"mixamorig:LeftToe_End_end",
+    "active":true,
+    "tag":"Untagged",
+    "layer":0,
+    "components":[{"type":"Transform","enabled":true}],
+    "children":[
+
+    ]
+  }
+    ]
+  }
+    ]
+  }
+    ]
+  }
+    ]
+  }
+    ]
+  },
+{
+    "name":"mixamorig:RightUpLeg",
+    "active":true,
+    "tag":"Untagged",
+    "layer":0,
+    "components":[{"type":"Transform","enabled":true}],
+    "children":[
+{
+    "name":"mixamorig:RightLeg",
+    "active":true,
+    "tag":"Untagged",
+    "layer":0,
+    "components":[{"type":"Transform","enabled":true}],
+    "children":[
+{
+    "name":"mixamorig:RightFoot",
+    "active":true,
+    "tag":"Untagged",
+    "layer":0,
+    "components":[{"type":"Transform","enabled":true}],
+    "children":[
+{
+    "name":"mixamorig:RightToeBase",
+    "active":true,
+    "tag":"Untagged",
+    "layer":0,
+    "components":[{"type":"Transform","enabled":true}],
+    "children":[
+{
+    "name":"mixamorig:RightToe_End",
+    "active":true,
+    "tag":"Untagged",
+    "layer":0,
+    "components":[{"type":"Transform","enabled":true}],
+    "children":[
+{
+    "name":"mixamorig:RightToe_End_end",
+    "active":true,
+    "tag":"Untagged",
+    "layer":0,
+    "components":[{"type":"Transform","enabled":true}],
+    "children":[
+
+    ]
+  }
+    ]
+  }
+    ]
+  }
+    ]
+  }
+    ]
+  }
+    ]
+  },
+{
+    "name":"mixamorig:Spine",
+    "active":true,
+    "tag":"Untagged",
+    "layer":0,
+    "components":[{"type":"Transform","enabled":true}],
+    "children":[
+{
+    "name":"mixamorig:Spine1",
+    "active":true,
+    "tag":"Untagged",
+    "layer":0,
+    "components":[{"type":"Transform","enabled":true}],
+    "children":[
+{
+    "name":"mixamorig:Spine2",
+    "active":true,
+    "tag":"Untagged",
+    "layer":0,
+    "components":[{"type":"Transform","enabled":true}],
+    "children":[
+{
+    "name":"mixamorig:LeftShoulder",
+    "active":true,
+    "tag":"Untagged",
+    "layer":0,
+    "components":[{"type":"Transform","enabled":true}],
+    "children":[
+{
+    "name":"mixamorig:LeftArm",
+    "active":true,
+    "tag":"Untagged",
+    "layer":0,
+    "components":[{"type":"Transform","enabled":true}],
+    "children":[
+{
+    "name":"mixamorig:LeftForeArm",
+    "active":true,
+    "tag":"Untagged",
+    "layer":0,
+    "components":[{"type":"Transform","enabled":true}],
+    "children":[
+{
+    "name":"mixamorig:LeftHand",
+    "active":true,
+    "tag":"Untagged",
+    "layer":0,
+    "components":[{"type":"Transform","enabled":true}],
+    "children":[
+{
+    "name":"mixamorig:LeftHandIndex1",
+    "active":true,
+    "tag":"Untagged",
+    "layer":0,
+    "components":[{"type":"Transform","enabled":true}],
+    "children":[
+{
+    "name":"mixamorig:LeftHandIndex2",
+    "active":true,
+    "tag":"Untagged",
+    "layer":0,
+    "components":[{"type":"Transform","enabled":true}],
+    "children":[
+{
+    "name":"mixamorig:LeftHandIndex3",
+    "active":true,
+    "tag":"Untagged",
+    "layer":0,
+    "components":[{"type":"Transform","enabled":true}],
+    "children":[
+{
+    "name":"mixamorig:LeftHandIndex4",
+    "active":true,
+    "tag":"Untagged",
+    "layer":0,
+    "components":[{"type":"Transform","enabled":true}],
+    "children":[
+{
+    "name":"mixamorig:LeftHandIndex4_end",
+    "active":true,
+    "tag":"Untagged",
+    "layer":0,
+    "components":[{"type":"Transform","enabled":true}],
+    "children":[
+
+    ]
+  }
+    ]
+  }
+    ]
+  }
+    ]
+  }
+    ]
+  },
+{
+    "name":"mixamorig:LeftHandThumb1",
+    "active":true,
+    "tag":"Untagged",
+    "layer":0,
+    "components":[{"type":"Transform","enabled":true}],
+    "children":[
+{
+    "name":"mixamorig:LeftHandThumb2",
+    "active":true,
+    "tag":"Untagged",
+    "layer":0,
+    "components":[{"type":"Transform","enabled":true}],
+    "children":[
+{
+    "name":"mixamorig:LeftHandThumb3",
+    "active":true,
+    "tag":"Untagged",
+    "layer":0,
+    "components":[{"type":"Transform","enabled":true}],
+    "children":[
+{
+    "name":"mixamorig:LeftHandThumb4",
+    "active":true,
+    "tag":"Untagged",
+    "layer":0,
+    "components":[{"type":"Transform","enabled":true}],
+    "children":[
+{
+    "name":"mixamorig:LeftHandThumb4_end",
+    "active":true,
+    "tag":"Untagged",
+    "layer":0,
+    "components":[{"type":"Transform","enabled":true}],
+    "children":[
+
+    ]
+  }
+    ]
+  }
+    ]
+  }
+    ]
+  }
+    ]
+  }
+    ]
+  }
+    ]
+  }
+    ]
+  }
+    ]
+  },
+{
+    "name":"mixamorig:Neck",
+    "active":true,
+    "tag":"Untagged",
+    "layer":0,
+    "components":[{"type":"Transform","enabled":true}],
+    "children":[
+{
+    "name":"mixamorig:Head",
+    "active":true,
+    "tag":"Untagged",
+    "layer":0,
+    "components":[{"type":"Transform","enabled":true}],
+    "children":[
+{
+    "name":"mixamorig:HeadTop_End",
+    "active":true,
+    "tag":"Untagged",
+    "layer":0,
+    "components":[{"type":"Transform","enabled":true}],
+    "children":[
+{
+    "name":"mixamorig:HeadTop_End_end",
+    "active":true,
+    "tag":"Untagged",
+    "layer":0,
+    "components":[{"type":"Transform","enabled":true}],
+    "children":[
+
+    ]
+  }
+    ]
+  }
+    ]
+  }
+    ]
+  },
+{
+    "name":"mixamorig:RightShoulder",
+    "active":true,
+    "tag":"Untagged",
+    "layer":0,
+    "components":[{"type":"Transform","enabled":true}],
+    "children":[
+{
+    "name":"mixamorig:RightArm",
+    "active":true,
+    "tag":"Untagged",
+    "layer":0,
+    "components":[{"type":"Transform","enabled":true}],
+    "children":[
+{
+    "name":"mixamorig:RightForeArm",
+    "active":true,
+    "tag":"Untagged",
+    "layer":0,
+    "components":[{"type":"Transform","enabled":true}],
+    "children":[
+{
+    "name":"mixamorig:RightHand",
+    "active":true,
+    "tag":"Untagged",
+    "layer":0,
+    "components":[{"type":"Transform","enabled":true}],
+    "children":[
+{
+    "name":"mixamorig:RightHandIndex1",
+    "active":true,
+    "tag":"Untagged",
+    "layer":0,
+    "components":[{"type":"Transform","enabled":true}],
+    "children":[
+{
+    "name":"mixamorig:RightHandIndex2",
+    "active":true,
+    "tag":"Untagged",
+    "layer":0,
+    "components":[{"type":"Transform","enabled":true}],
+    "children":[
+{
+    "name":"mixamorig:RightHandIndex3",
+    "active":true,
+    "tag":"Untagged",
+    "layer":0,
+    "components":[{"type":"Transform","enabled":true}],
+    "children":[
+{
+    "name":"mixamorig:RightHandIndex4",
+    "active":true,
+    "tag":"Untagged",
+    "layer":0,
+    "components":[{"type":"Transform","enabled":true}],
+    "children":[
+{
+    "name":"mixamorig:RightHandIndex4_end",
+    "active":true,
+    "tag":"Untagged",
+    "layer":0,
+    "components":[{"type":"Transform","enabled":true}],
+    "children":[
+
+    ]
+  }
+    ]
+  }
+    ]
+  }
+    ]
+  }
+    ]
+  },
+{
+    "name":"mixamorig:RightHandThumb1",
+    "active":true,
+    "tag":"Untagged",
+    "layer":0,
+    "components":[{"type":"Transform","enabled":true}],
+    "children":[
+{
+    "name":"mixamorig:RightHandThumb2",
+    "active":true,
+    "tag":"Untagged",
+    "layer":0,
+    "components":[{"type":"Transform","enabled":true}],
+    "children":[
+{
+    "name":"mixamorig:RightHandThumb3",
+    "active":true,
+    "tag":"Untagged",
+    "layer":0,
+    "components":[{"type":"Transform","enabled":true}],
+    "children":[
+{
+    "name":"mixamorig:RightHandThumb4",
+    "active":true,
+    "tag":"Untagged",
+    "layer":0,
+    "components":[{"type":"Transform","enabled":true}],
+    "children":[
+{
+    "name":"mixamorig:RightHandThumb4_end",
+    "active":true,
+    "tag":"Untagged",
+    "layer":0,
+    "components":[{"type":"Transform","enabled":true}],
+    "children":[
+
+    ]
+  }
+    ]
+  }
+    ]
+  }
+    ]
+  }
+    ]
+  }
+    ]
+  }
+    ]
+  }
+    ]
+  }
+    ]
+  }
+    ]
+  }
+    ]
+  }
+    ]
+  }
+    ]
+  }
+    ]
+  },
+{
+    "name":"Body.001",
+    "active":true,
+    "tag":"Untagged",
+    "layer":0,
+    "components":[{"type":"Transform","enabled":true},{"type":"SkinnedMeshRenderer","enabled":true}],
+    "children":[
+
+    ]
+  },
+{
+    "name":"Bottoms.001",
+    "active":true,
+    "tag":"Untagged",
+    "layer":0,
+    "components":[{"type":"Transform","enabled":true},{"type":"SkinnedMeshRenderer","enabled":true}],
+    "children":[
+
+    ]
+  },
+{
+    "name":"Eyelashes.001",
+    "active":true,
+    "tag":"Untagged",
+    "layer":0,
+    "components":[{"type":"Transform","enabled":true},{"type":"SkinnedMeshRenderer","enabled":true}],
+    "children":[
+
+    ]
+  },
+{
+    "name":"Eyes.001",
+    "active":true,
+    "tag":"Untagged",
+    "layer":0,
+    "components":[{"type":"Transform","enabled":true},{"type":"SkinnedMeshRenderer","enabled":true}],
+    "children":[
+
+    ]
+  },
+{
+    "name":"Gloves.001",
+    "active":true,
+    "tag":"Untagged",
+    "layer":0,
+    "components":[{"type":"Transform","enabled":true},{"type":"SkinnedMeshRenderer","enabled":true}],
+    "children":[
+
+    ]
+  },
+{
+    "name":"Hats.001",
+    "active":true,
+    "tag":"Untagged",
+    "layer":0,
+    "components":[{"type":"Transform","enabled":true},{"type":"SkinnedMeshRenderer","enabled":true}],
+    "children":[
+
+    ]
+  },
+{
+    "name":"Masks.001",
+    "active":true,
+    "tag":"Untagged",
+    "layer":0,
+    "components":[{"type":"Transform","enabled":true},{"type":"SkinnedMeshRenderer","enabled":true}],
+    "children":[
+
+    ]
+  },
+{
+    "name":"Shoes.001",
+    "active":true,
+    "tag":"Untagged",
+    "layer":0,
+    "components":[{"type":"Transform","enabled":true},{"type":"SkinnedMeshRenderer","enabled":true}],
+    "children":[
+
+    ]
+  },
+{
+    "name":"Tops.001",
+    "active":true,
+    "tag":"Untagged",
+    "layer":0,
+    "components":[{"type":"Transform","enabled":true},{"type":"SkinnedMeshRenderer","enabled":true}],
+    "children":[
+
+    ]
+  }
+    ]
+  }
+  ]
+}

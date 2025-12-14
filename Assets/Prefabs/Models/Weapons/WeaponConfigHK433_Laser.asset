@@ -1,0 +1,142 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ce6842e0add13344a8692217499b3af, type: 3}
+  m_Name: WeaponConfigHK433_Laser
+  m_EditorClassIdentifier: 
+  fireModes:
+  - modeName: 
+    mode: 1
+    damage: 20
+    penetration: 100
+    projectileForce: 5
+    fireRate: 0.3
+    spread: 0.1
+    bulletsPerShot: 1
+    delayBetweenBullets: 1
+    isAutoBurst: 0
+    isShotgunStyle: 0
+    raycastRange: -1
+  - modeName: 
+    mode: 2
+    damage: 30000
+    penetration: 300
+    projectileForce: 2
+    fireRate: 1
+    spread: 10
+    bulletsPerShot: 3
+    delayBetweenBullets: 0
+    isAutoBurst: 0
+    isShotgunStyle: 1
+    raycastRange: 100
+  defaultFireModeIndex: 0
+  weaponName: HS433
+  weaponType: 1
+  weaponPrefab: {fileID: 1590160723161331447, guid: 6bc4b83ee447f8347976590b233152ab, type: 3}
+  magazineSize: 30
+  maxAmmo: 120
+  reloadTime: 1.5
+  bulletType: {fileID: 11400000, guid: c1443f0cf160f0d45b7ca96bc473b348, type: 2}
+  projectilePrefab: {fileID: 477652416156791156, guid: a7e58d298a1cf524fb0dd101425c3f06, type: 3}
+  casingPrefab: {fileID: 1275221622406158421, guid: 65a47b69198043e4db49c68a2883edd9, type: 3}
+  shootSfx: {fileID: 8300000, guid: 34c638d8d99ccfd44a261f13505ab317, type: 3}
+  reloadSfx: {fileID: 8300000, guid: 34c638d8d99ccfd44a261f13505ab317, type: 3}
+  reloadAnimation: {fileID: 0}
+  ejectCasing: 1
+  casingEjectForce: 1
+  casingRandomAngle: 8
+  casingRandomSpin: 1.5
+  casingLifetime: 4
+  aimSpreadMultiplier: 0.5
+  aimTimeSeconds: 0.15
+  hipFOV: 70
+  adsFOV: 60
+  fovLerpTime: 0.12
+  aimToggle: 1
+  adsSensitivityMultiplier: 0.6
+  defaultRaycastRange: 100
+  animSet: {fileID: 11400000, guid: 702b14e60ca631c41a1e303a38383c41, type: 2}
+  weaponTag: 1
+  damageType: 8
+  falloffProfile: {fileID: 11400000, guid: 7bf062265714eba4ba35dd61533b7f70, type: 2}
+  localFalloff:
+    enable: 0
+    useDistance: 0
+    distanceStart: 0
+    distanceEnd: 0
+    damageMulByDistance:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    penMulByDistance:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    useTime: 0
+    timeStart: 0
+    timeEnd: 0
+    damageMulByTime:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    penMulByTime:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    minDamageMul: 1
+    minPenMul: 1
+    hitscanMuzzleSpeed: 0
+  perModeFalloff:
+  - modeIndex: 0
+    enable: 0
+    falloff:
+      enable: 0
+      useDistance: 0
+      distanceStart: 0
+      distanceEnd: 0
+      damageMulByDistance:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 0
+        m_PostInfinity: 0
+        m_RotationOrder: 0
+      penMulByDistance:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 0
+        m_PostInfinity: 0
+        m_RotationOrder: 0
+      useTime: 0
+      timeStart: 0
+      timeEnd: 0
+      damageMulByTime:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 0
+        m_PostInfinity: 0
+        m_RotationOrder: 0
+      penMulByTime:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 0
+        m_PostInfinity: 0
+        m_RotationOrder: 0
+      minDamageMul: 0
+      minPenMul: 0
+      hitscanMuzzleSpeed: 0

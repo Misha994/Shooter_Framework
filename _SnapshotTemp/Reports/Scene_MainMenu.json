@@ -1,0 +1,25 @@
+{
+  "scene":"Assets/Scenes/MainMenu.unity",
+  "roots":[
+{
+    "name":"SceneContext",
+    "active":true,
+    "tag":"Untagged",
+    "layer":0,
+    "components":[{"type":"Transform","enabled":true},{"type":"SceneContext","enabled":true},{"type":"MainMenuInstaller","enabled":true}],
+    "children":[
+
+    ]
+  },
+{
+    "name":"EventSystem",
+    "active":true,
+    "tag":"Untagged",
+    "layer":0,
+    "components":[{"type":"Transform","enabled":true},{"type":"EventSystem","enabled":true},{"type":"InputSystemUIInputModule","enabled":true}],
+    "children":[
+
+    ]
+  }
+  ]
+}
