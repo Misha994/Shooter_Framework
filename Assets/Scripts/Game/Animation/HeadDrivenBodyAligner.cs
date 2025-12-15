@@ -1,102 +1,153 @@
 ﻿using UnityEngine;
 using Cinemachine;
+using Zenject;
 
 /// <summary>
-/// Head-driven body align: вільний огляд до freeYawDeg (тіло не крутиться).
-/// Після порогу — тіло підлаштовується під голову (камеру).
+/// Arma-style: голова (камера) може відриватися від корпусу на кут freeYaw,
+/// після чого тіло плавно доганяє, щоб різниця не перевищувала цей кут.
+/// Все через SmoothDampAngle, без ривків.
 /// </summary>
-[DefaultExecutionOrder(+180)]
+[DefaultExecutionOrder(+200)]
 public class HeadDrivenBodyAligner : MonoBehaviour
 {
-	[Header("Refs")]
-	[Tooltip("Якщо задати vcam, візьмемо yaw з CinemachinePOV; інакше з cameraTransform")]
-	public CinemachineVirtualCamera vcam;
-	public Transform cameraTransform;   // fallback: основна камера/CameraTarget
+	[Header("References")]
+	[SerializeField] private CinemachineVirtualCamera vcam;
+	[Tooltip("Корінь yaw для персонажа (зазвичай 'Infantryman').")]
+	[SerializeField] private Transform yawRoot;
+	[Tooltip("Фізична камера (PlayerCamera) – фолбек, якщо немає POV.")]
+	[SerializeField] private Transform cameraTransform;
 
-	[Header("Angles (deg)")]
-	[Tooltip("До цього кута — повністю вільний огляд (тіло нерухоме)")]
-	public float freeYawDeg = 90f;
-	[Tooltip("Понад це тіло доганяє дуже швидко (жорсткий поріг)")]
-	public float hardYawDeg = 105f;
+	[Header("Free look (deg)")]
+	[Tooltip("Максимальний кут між камерою і корпусом в HIP (як у Arma freelook).")]
+	[SerializeField] private float hipFreeYawDeg = 40f;
 
-	[Header("Speeds (deg/s)")]
-	[Tooltip("Швидкість підтягування в межах (free..hard)")]
-	public float followSpeed = 360f;
-	[Tooltip("Швидкість доганяння за межами hardYawDeg")]
-	public float catchUpSpeed = 900f;
+	[Tooltip("Той самий кут у ADS (зазвичай менший, щоб легше тримати ціль).")]
+	[SerializeField] private float adsFreeYawDeg = 10f;
 
-	[Header("Optional recentre")]
-	[Tooltip("Авто-рецентр, коли гравець перестає крутити огляд (якщо треба)")]
-	public bool autoRecenter = false;
-	public float recenterDelay = 0.25f;
-	public float recenterSpeed = 120f;
+	[Header("Плавність повороту тіла")]
+	[Tooltip("Час згладжування повороту тіла в HIP (сек). 0.05–0.12 дає реалістичну інерцію.")]
+	[SerializeField] private float hipLagSeconds = 0.08f;
+
+	[Tooltip("Час згладжування повороту тіла в ADS (сек).")]
+	[SerializeField] private float adsLagSeconds = 0.06f;
+
+	[Tooltip("Максимальна кутова швидкість повороту тіла (deg/sec).")]
+	[SerializeField] private float maxDegreesPerSecond = 720f;
+
+	[Header("Auto recenter (опційно)")]
+	[SerializeField] private bool autoRecenter = false;
+	[SerializeField] private float recenterDelay = 0.3f;
+	[SerializeField] private float recenterLagSeconds = 0.15f;
 
 	private CinemachinePOV _pov;
 	private IInputService _input;
-	private float _noLookTimer;
 
-	void Awake()
+	private float _yawVel;      // для SmoothDampAngle
+	private float _noLookTimer; // скільки часу мишка не рухалась
+
+	// ===== DI =====
+	[Inject]
+	private void Construct(IInputService input)
 	{
-		if (!vcam) vcam = GetComponentInParent<CinemachineVirtualCamera>();
-		if (vcam) _pov = vcam.GetCinemachineComponent<CinemachinePOV>();
-		if (!cameraTransform && Camera.main) cameraTransform = Camera.main.transform;
-		_input = GetComponentInParent<IInputService>();
+		_input = input;
 	}
 
-	void Update()
+	private void Awake()
 	{
-		// 1) yaw голови/камери
-		float headYaw = GetHeadYaw();
-		float bodyYaw = transform.eulerAngles.y;
-		float delta = Mathf.DeltaAngle(bodyYaw, headYaw);
-		float absDelta = Mathf.Abs(delta);
+		if (!vcam)
+			vcam = FindObjectOfType<CinemachineVirtualCamera>();
 
-		// 2) чи є рух камери цього кадру
-		bool hasLook = false;
-		if (_input != null)
-		{
-			var look = _input.GetLookDelta();
-			hasLook = (look.sqrMagnitude > 0.000001f);
-		}
-		_noLookTimer = hasLook ? 0f : (_noLookTimer + Time.deltaTime);
+		ResolvePov();
 
-		// 3) логіка зон
-		if (absDelta >= hardYawDeg)
-		{
-			// жорстке доганяння
-			RotateTowards(headYaw, catchUpSpeed);
-		}
-		else if (absDelta > freeYawDeg)
-		{
-			// плавне підтягування (що ближче до hard — то швидше)
-			float t = Mathf.InverseLerp(freeYawDeg, hardYawDeg, absDelta);
-			float speed = Mathf.Lerp(followSpeed * 0.6f, catchUpSpeed, t);
-			RotateTowards(headYaw, speed);
-		}
+		if (!yawRoot)
+			yawRoot = transform;
+
+		if (!cameraTransform && Camera.main)
+			cameraTransform = Camera.main.transform;
+	}
+
+	private void ResolvePov()
+	{
+		if (vcam == null)
+			return;
+
+		// Якщо POV був видалений/переставлений — отримаємо актуальний
+		var pov = vcam.GetCinemachineComponent<CinemachinePOV>();
+		if (pov != null)
+			_pov = pov;
+	}
+
+	private void LateUpdate()
+	{
+		if (!yawRoot)
+			return;
+
+		// На випадок MissingReference після маніпуляцій з VCam
+		if (_pov == null)
+			ResolvePov();
+
+		float camYaw = GetCameraYaw();
+		if (float.IsNaN(camYaw))
+			return;
+
+		Vector3 euler = yawRoot.eulerAngles;
+		float bodyYaw = euler.y;
+
+		bool isADS = _input != null && _input.IsAimHeld();
+
+		float freeYaw = Mathf.Max(0f, isADS ? adsFreeYawDeg : hipFreeYawDeg);
+		float lag = Mathf.Max(0.0001f, isADS ? adsLagSeconds : hipLagSeconds);
+
+		// Відстежуємо активність мишки
+		Vector2 look = _input != null ? _input.GetLookDelta() : Vector2.zero;
+		if (look.sqrMagnitude > 0.0001f)
+			_noLookTimer = 0f;
 		else
+			_noLookTimer += Time.deltaTime;
+
+		// Різниця між корпусом і камерою
+		float diff = Mathf.DeltaAngle(bodyYaw, camYaw); // [-180; 180]
+		float absDiff = Mathf.Abs(diff);
+
+		// Arma-логіка:
+		//  - поки |diff| <= freeYaw → голова "вільна", тіло стоїть
+		//  - коли |diff| > freeYaw → тіло крутиться, щоб залишатись на краю цієї зони
+		float clampedDiff = Mathf.Clamp(diff, -freeYaw, freeYaw);
+
+		// Цільовий yaw корпусу — такий, щоб камера була відхилена не більше, ніж на freeYaw
+		float targetBodyYaw = camYaw - clampedDiff;
+
+		// Опціональний авто-рецентр, коли мишка не рухається і ми всередині зони
+		if (autoRecenter && absDiff < freeYaw * 0.5f && _noLookTimer > recenterDelay)
 		{
-			// повністю вільний огляд
-			if (autoRecenter && _noLookTimer >= recenterDelay && recenterSpeed > 0f)
-				RotateTowards(headYaw, recenterSpeed);
+			// повільно підтягувати корпус прямо під камеру
+			targetBodyYaw = camYaw;
+			lag = recenterLagSeconds;
 		}
+
+		// Плавний поворот без ривків
+		float newYaw = Mathf.SmoothDampAngle(
+			bodyYaw,
+			targetBodyYaw,
+			ref _yawVel,
+			lag,
+			maxDegreesPerSecond
+		);
+
+		euler.y = newYaw;
+		yawRoot.eulerAngles = euler;
 	}
 
-	float GetHeadYaw()
+	private float GetCameraYaw()
 	{
+		// Якщо POV живий – беремо yaw звідти (те саме, що крутиш у CinemachinePlayerAimAdapter)
 		if (_pov != null)
 			return _pov.m_HorizontalAxis.Value;
 
-		if (cameraTransform)
+		// Фолбек — фізична камера
+		if (cameraTransform != null)
 			return cameraTransform.eulerAngles.y;
 
-		return transform.eulerAngles.y;
-	}
-
-	void RotateTowards(float targetYaw, float degPerSec)
-	{
-		float current = transform.eulerAngles.y;
-		float step = degPerSec * Time.deltaTime;
-		float newYaw = Mathf.MoveTowardsAngle(current, targetYaw, step);
-		transform.rotation = Quaternion.Euler(0f, newYaw, 0f);
+		return float.NaN;
 	}
 }

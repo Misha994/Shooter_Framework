@@ -21,3 +21,15 @@ MonoBehaviour:
   LookSensitivity: 2
   MinPitch: -80
   MaxPitch: 80
+  mouseSensitivityHip: 1
+  mouseSensitivityADS: 1
+  hipFreeYaw: 40
+  adsFreeYaw: 5
+  hardYaw: 120
+  hipFollowSpeed: 150
+  adsFollowSpeed: 120
+  catchUpSpeed: 360
+  autoRecenterBody: 1
+  bodyRecenterDelay: 0.35
+  bodyRecenterSpeed: 90
+  bodyYawSmoothTime: 0.07
